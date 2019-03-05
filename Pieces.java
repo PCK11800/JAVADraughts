@@ -28,8 +28,6 @@ public class Pieces extends Components{
             }
         
     void redPieceAction(int x, int y, int z){ 
-        ImageIcon red = new ImageIcon("red.png");
-        JButton redPiece = new JButton(red);
         ImageIcon yellow = new ImageIcon("selected.png");
         JButton selected1 = new JButton(yellow);
         JButton selected2 = new JButton(yellow);
@@ -41,8 +39,6 @@ public class Pieces extends Components{
                             public void actionPerformed(ActionEvent e) {
                                 int xS_pos = selected1.getLocation().x;
                                 int yS_pos = selected1.getLocation().y;
-                                boardPane.remove(redPiece);
-                                boardPane.revalidate();
                                 boardPane.repaint(); 
                                 Pieces piece = new Pieces();
                                 piece.addRedPiece(xS_pos, yS_pos, z);
@@ -61,8 +57,6 @@ public class Pieces extends Components{
                             public void actionPerformed(ActionEvent e) {
                                 int xS_pos = selected2.getLocation().x; 
                                 int yS_pos = selected2.getLocation().y;
-                                boardPane.remove(redPiece);
-                                boardPane.revalidate();
                                 boardPane.repaint(); 
                                 Pieces piece = new Pieces();
                                 piece.addRedPiece(xS_pos, yS_pos, z);
@@ -95,8 +89,6 @@ public class Pieces extends Components{
     }
 
     void whitePieceAction(int x, int y, int z){ 
-        ImageIcon white = new ImageIcon("white.png");
-        JButton whitePiece = new JButton(white);
         ImageIcon yellow = new ImageIcon("selected.png");
         JButton selected1 = new JButton(yellow);
         JButton selected2 = new JButton(yellow);
@@ -108,8 +100,6 @@ public class Pieces extends Components{
                             public void actionPerformed(ActionEvent e) {
                                 int xS_pos = selected1.getLocation().x;
                                 int yS_pos = selected1.getLocation().y;
-                                boardPane.remove(whitePiece);
-                                boardPane.revalidate();
                                 boardPane.repaint(); 
                                 Pieces piece = new Pieces();
                                 piece.addWhitePiece(xS_pos, yS_pos, z);
@@ -128,8 +118,6 @@ public class Pieces extends Components{
                             public void actionPerformed(ActionEvent e) {
                                 int xS_pos = selected2.getLocation().x; 
                                 int yS_pos = selected2.getLocation().y;
-                                boardPane.remove(whitePiece);
-                                boardPane.revalidate();
                                 boardPane.repaint(); 
                                 Pieces piece = new Pieces();
                                 piece.addWhitePiece(xS_pos, yS_pos, z);
@@ -160,9 +148,5 @@ public class Pieces extends Components{
         piece.addWhitePiece(240, 400, sizeLength);
         piece.addWhitePiece(400, 400, sizeLength);
         piece.addWhitePiece(560, 400, sizeLength);
-    }
-
-    void storage(int sizeLength){
-        Pieces piece = new Pieces();
     }
 }
