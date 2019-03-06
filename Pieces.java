@@ -149,4 +149,20 @@ public class Pieces extends Components{
         piece.addWhitePiece(400, 400, sizeLength);
         piece.addWhitePiece(560, 400, sizeLength);
     }
+
+    void iniRed(int sizeLength){
+        Pieces piece = new Pieces();
+        piece.addRedPiece(0, 0, sizeLength);
+        piece.addRedPiece(160, 0, sizeLength);
+        piece.addRedPiece(320, 0, sizeLength);
+        piece.addRedPiece(480, 0, sizeLength);
+        piece.addRedPiece(80, 80, sizeLength);
+        piece.addRedPiece(240, 80, sizeLength);
+        piece.addRedPiece(400, 80, sizeLength);
+        piece.addRedPiece(560, 80, sizeLength);
+        piece.addRedPiece(0, 160, sizeLength);
+        piece.addRedPiece(160, 160, sizeLength);
+        piece.addRedPiece(320, 160, sizeLength);
+        piece.addRedPiece(480, 160, sizeLength);
+    }
 }

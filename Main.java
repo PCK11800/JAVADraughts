@@ -13,5 +13,6 @@ public class Main{
         boardPane.boardSetup(640);
         square.createBoard(80);
         piece.iniWhite(80);
+        piece.iniRed(80);
     }
 }
